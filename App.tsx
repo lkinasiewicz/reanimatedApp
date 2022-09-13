@@ -28,6 +28,9 @@ import Animated, {
   withSpring,
 } from 'react-native-reanimated';
 
+// @ts-expect-error _v8runtime is not declared
+const v8Version = global._v8runtime?.().version;
+
 const AnimatedExample = () => {
   const offset = useSharedValue(0);
 
@@ -64,6 +67,7 @@ const App = () => {
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
+        {!!v8Version && <Text>V8 {v8Version}</Text>}
         <Header />
         <View
           style={{

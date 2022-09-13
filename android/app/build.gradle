@@ -79,7 +79,11 @@ import org.apache.tools.ant.taskdefs.condition.Os
  */
 
 project.ext.react = [
-    enableHermes: true,  // clean and rebuild if changing
+    enableHermes: false,  // clean and rebuild if changing
+]
+
+project.ext.reanimated = [
+    buildFromSource: true // necessary to run with V8
 ]
 
 apply from: "../../node_modules/react-native/react.gradle"
@@ -245,6 +249,11 @@ android {
             }
 
         }
+    }
+
+    packagingOptions {
+        // Make sure libjsc.so is not included in APK
+        exclude "**/libjsc.so"
     }
 }
 

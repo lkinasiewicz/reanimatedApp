@@ -5794,6 +5794,11 @@ react-native-reanimated@2.10.0:
     setimmediate "^1.0.5"
     string-hash-64 "^1.0.3"
 
+react-native-v8@^1.4.7:
+  version "1.4.8"
+  resolved "https://registry.yarnpkg.com/react-native-v8/-/react-native-v8-1.4.8.tgz#f706c2ccc32fb08e51f5286328b3349768af4e05"
+  integrity sha512-syKIFrXpgjmH+badL5Zj4f/2YQqSWeQKqXt2sZfu4i1ngev1VYCqYt1pQ5qx0dpQIjx62DiZAFFvV3EnrE9l/Q==
+
 react-native@0.70.0:
   version "0.70.0"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.70.0.tgz#c7670774ad761865041d5a6b3a6a25e7f2e65fb2"
@@ -6945,6 +6950,11 @@ uuid@^8.3.0:
   version "8.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
+
+v8-android-jit@^10.100.1:
+  version "10.100.1"
+  resolved "https://registry.yarnpkg.com/v8-android-jit/-/v8-android-jit-10.100.1.tgz#063dd25aaa3742ce347020faa31bc3d64186646b"
+  integrity sha512-W5xeoX/a28rjPCPXRJDLEi9o+DfHl9FyhbmhtuLP1LSCbPTMmOsFRkFzkz2FMS+i7S13zTq4q3Rr2GogKo1+RQ==
 
 v8-compile-cache@^2.0.3:
   version "2.3.0"
